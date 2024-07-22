@@ -44,6 +44,8 @@
 		E516A2E12C4E30FC00867A65 /* PilotLoggerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PilotLoggerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E516A2E52C4E30FC00867A65 /* PilotLoggerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilotLoggerUITests.swift; sourceTree = "<group>"; };
 		E516A2E72C4E30FC00867A65 /* PilotLoggerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilotLoggerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E516A2F42C4E37EA00867A65 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E516A2F62C4E385600867A65 /* app-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-image.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,8 @@
 		E516A2BE2C4E30F900867A65 = {
 			isa = PBXGroup;
 			children = (
+				E516A2F62C4E385600867A65 /* app-image.png */,
+				E516A2F42C4E37EA00867A65 /* README.md */,
 				E516A2C92C4E30F900867A65 /* PilotLogger */,
 				E516A2DA2C4E30FC00867A65 /* PilotLoggerTests */,
 				E516A2E42C4E30FC00867A65 /* PilotLoggerUITests */,
@@ -422,6 +426,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PilotLogger/Preview Content\"";
+				DEVELOPMENT_TEAM = 449N9QWY8D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -450,6 +455,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PilotLogger/Preview Content\"";
+				DEVELOPMENT_TEAM = 449N9QWY8D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
