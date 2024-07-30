@@ -9,6 +9,5 @@ This is a simple app designed to help pilots track their flight history
 - View Flight history
 
 ## ToDo
-- Update app for iPad 
 - Add more data fields
 - Add more features that would be useful for pilots

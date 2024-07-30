@@ -7,16 +7,6 @@
 
 import SwiftUI
 
-
-// Data model
-struct FlightLog: Identifiable {
-    let id = UUID()
-    var date: Date
-    var aircraftType: String
-    var pilotInCommandName: String
-    var flightTime: Double
-}
-
 // Main Content View
 struct ContentView: View {
     @State private var logs: [FlightLog] = []
@@ -25,9 +15,8 @@ struct ContentView: View {
     @State private var pilotInCommandName: String = ""
     @State private var flightTime = ""
     
-    
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack {
                 Form {
                     DatePicker("Date", selection: $date, displayedComponents: .date)
@@ -60,6 +49,7 @@ struct ContentView: View {
         // Clear input fields
         date = Date()
         aircraftType = ""
+        pilotInCommandName = ""
         flightTime = ""
     }
     

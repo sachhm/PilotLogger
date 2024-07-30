@@ -14,6 +14,8 @@
 		E516A2DC2C4E30FC00867A65 /* PilotLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E516A2DB2C4E30FC00867A65 /* PilotLoggerTests.swift */; };
 		E516A2E62C4E30FC00867A65 /* PilotLoggerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E516A2E52C4E30FC00867A65 /* PilotLoggerUITests.swift */; };
 		E516A2E82C4E30FC00867A65 /* PilotLoggerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E516A2E72C4E30FC00867A65 /* PilotLoggerUITestsLaunchTests.swift */; };
+		E5E7E8442C58623A0041C32A /* FlightLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E7E8432C58623A0041C32A /* FlightLog.swift */; };
+		E5E7E8462C58669E0041C32A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E7E8452C58669E0041C32A /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		E516A2E72C4E30FC00867A65 /* PilotLoggerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilotLoggerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E516A2F42C4E37EA00867A65 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E516A2F62C4E385600867A65 /* app-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-image.png"; sourceTree = "<group>"; };
+		E5E7E8432C58623A0041C32A /* FlightLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightLog.swift; sourceTree = "<group>"; };
+		E5E7E8452C58669E0041C32A /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				E516A2CC2C4E30F900867A65 /* ContentView.swift */,
 				E516A2CE2C4E30FC00867A65 /* Assets.xcassets */,
 				E516A2D02C4E30FC00867A65 /* Preview Content */,
+				E5E7E8432C58623A0041C32A /* FlightLog.swift */,
+				E5E7E8452C58669E0041C32A /* Launch Screen.storyboard */,
 			);
 			path = PilotLogger;
 			sourceTree = "<group>";
@@ -235,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5E7E8462C58669E0041C32A /* Launch Screen.storyboard in Resources */,
 				E516A2D22C4E30FC00867A65 /* Preview Assets.xcassets in Resources */,
 				E516A2CF2C4E30FC00867A65 /* Assets.xcassets in Resources */,
 			);
@@ -263,6 +270,7 @@
 			files = (
 				E516A2CD2C4E30F900867A65 /* ContentView.swift in Sources */,
 				E516A2CB2C4E30F900867A65 /* PilotLoggerApp.swift in Sources */,
+				E5E7E8442C58623A0041C32A /* FlightLog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
