@@ -1,0 +1,43 @@
+included:
+  - PilotLogger
+  - PilotLoggerTests
+
+excluded:
+  - PilotLogger/Resources
+
+disabled_rules:
+  - trailing_whitespace
+  - line_length
+  - identifier_name
+  - type_body_length
+
+opt_in_rules:
+  - empty_count
+  - closure_spacing
+  - contains_over_first_not_nil
+  - discouraged_optional_boolean
+  - fatal_error_message
+  - first_where
+  - modifier_order
+  - overridden_super_call
+  - private_action
+  - unneeded_parentheses_in_closure_argument
+
+force_cast: warning
+force_try: warning
+
+file_length:
+  warning: 400
+  error: 800
+
+function_body_length:
+  warning: 50
+  error: 100
+
+type_name:
+  min_length: 3
+  max_length: 50
+
+nesting:
+  type_level: 3
+  function_level: 4

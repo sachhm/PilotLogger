@@ -14,8 +14,32 @@
 		E516A2DC2C4E30FC00867A65 /* PilotLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E516A2DB2C4E30FC00867A65 /* PilotLoggerTests.swift */; };
 		E516A2E62C4E30FC00867A65 /* PilotLoggerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E516A2E52C4E30FC00867A65 /* PilotLoggerUITests.swift */; };
 		E516A2E82C4E30FC00867A65 /* PilotLoggerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E516A2E72C4E30FC00867A65 /* PilotLoggerUITestsLaunchTests.swift */; };
-		E5E7E8442C58623A0041C32A /* FlightLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E7E8432C58623A0041C32A /* FlightLog.swift */; };
 		E5E7E8462C58669E0041C32A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E7E8452C58669E0041C32A /* Launch Screen.storyboard */; };
+		AA0001012C6000010000000A /* FlightLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0001012C60000100000001 /* FlightLog.swift */; };
+		AA0001012C6000010000000B /* FlightLogServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0001012C60000100000002 /* FlightLogServiceProtocol.swift */; };
+		AA0001012C6000010000000C /* FlightLogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0001012C60000100000003 /* FlightLogService.swift */; };
+		AA0001012C6000010000000D /* FlightLogListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0001012C60000100000004 /* FlightLogListViewModel.swift */; };
+		AA0001012C6000010000000E /* FlightLogFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0001012C60000100000005 /* FlightLogFormViewModel.swift */; };
+		AA0001012C6000010000000F /* FlightLogFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0001012C60000100000006 /* FlightLogFormView.swift */; };
+		AA0001012C60000100000010 /* FlightLogDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0001012C60000100000007 /* FlightLogDetailView.swift */; };
+		AA0001012C60000100000011 /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0001012C60000100000008 /* StatisticsView.swift */; };
+		AA0001012C60000100000012 /* FlightLogListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0001012C60000100000009 /* FlightLogListView.swift */; };
+		BB0001012C60000100000005 /* MockFlightLogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0001012C60000100000001 /* MockFlightLogService.swift */; };
+		BB0001012C60000100000006 /* FlightLogModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0001012C60000100000002 /* FlightLogModelTests.swift */; };
+		BB0001012C60000100000007 /* FlightLogFormViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0001012C60000100000003 /* FlightLogFormViewModelTests.swift */; };
+		BB0001012C60000100000008 /* FlightLogListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0001012C60000100000004 /* FlightLogListViewModelTests.swift */; };
+		CC0001012C60000100000009 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0001012C60000100000001 /* NetworkServiceProtocol.swift */; };
+		CC0001012C6000010000000A /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0001012C60000100000002 /* NetworkService.swift */; };
+		CC0001012C6000010000000B /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0001012C60000100000003 /* Airport.swift */; };
+		CC0001012C6000010000000C /* AirportServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0001012C60000100000004 /* AirportServiceProtocol.swift */; };
+		CC0001012C6000010000000D /* AirportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0001012C60000100000005 /* AirportService.swift */; };
+		CC0001012C6000010000000E /* AirportSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0001012C60000100000006 /* AirportSearchViewModel.swift */; };
+		CC0001012C6000010000000F /* AirportSearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0001012C60000100000007 /* AirportSearchField.swift */; };
+		CC0001012C60000100000010 /* airports.json in Resources */ = {isa = PBXBuildFile; fileRef = CC0001012C60000100000008 /* airports.json */; };
+		DD0001010000000000000004 /* PilotLoggerWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0001010000000000000001 /* PilotLoggerWidgetBundle.swift */; };
+		DD0001010000000000000005 /* PilotLoggerWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0001010000000000000002 /* PilotLoggerWidget.swift */; };
+		DD0001010000000000000006 /* FlightLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0001012C60000100000001 /* FlightLog.swift */; };
+		DD0001010000000000000012 /* PilotLoggerWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DD0001010000000000000003 /* PilotLoggerWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +57,28 @@
 			remoteGlobalIDString = E516A2C62C4E30F900867A65;
 			remoteInfo = PilotLogger;
 		};
+		DD000101000000000000000F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E516A2BF2C4E30F900867A65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD000101000000000000000B;
+			remoteInfo = PilotLoggerWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DD0001010000000000000011 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DD0001010000000000000012 /* PilotLoggerWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E516A2C72C4E30F900867A65 /* PilotLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PilotLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,8 +93,31 @@
 		E516A2E72C4E30FC00867A65 /* PilotLoggerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilotLoggerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E516A2F42C4E37EA00867A65 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E516A2F62C4E385600867A65 /* app-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-image.png"; sourceTree = "<group>"; };
-		E5E7E8432C58623A0041C32A /* FlightLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightLog.swift; sourceTree = "<group>"; };
 		E5E7E8452C58669E0041C32A /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		AA0001012C60000100000001 /* FlightLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightLog.swift; sourceTree = "<group>"; };
+		AA0001012C60000100000002 /* FlightLogServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightLogServiceProtocol.swift; sourceTree = "<group>"; };
+		AA0001012C60000100000003 /* FlightLogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightLogService.swift; sourceTree = "<group>"; };
+		AA0001012C60000100000004 /* FlightLogListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightLogListViewModel.swift; sourceTree = "<group>"; };
+		AA0001012C60000100000005 /* FlightLogFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightLogFormViewModel.swift; sourceTree = "<group>"; };
+		AA0001012C60000100000006 /* FlightLogFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightLogFormView.swift; sourceTree = "<group>"; };
+		AA0001012C60000100000007 /* FlightLogDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightLogDetailView.swift; sourceTree = "<group>"; };
+		AA0001012C60000100000008 /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		AA0001012C60000100000009 /* FlightLogListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightLogListView.swift; sourceTree = "<group>"; };
+		BB0001012C60000100000001 /* MockFlightLogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFlightLogService.swift; sourceTree = "<group>"; };
+		BB0001012C60000100000002 /* FlightLogModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightLogModelTests.swift; sourceTree = "<group>"; };
+		BB0001012C60000100000003 /* FlightLogFormViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightLogFormViewModelTests.swift; sourceTree = "<group>"; };
+		BB0001012C60000100000004 /* FlightLogListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightLogListViewModelTests.swift; sourceTree = "<group>"; };
+		CC0001012C60000100000001 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		CC0001012C60000100000002 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		CC0001012C60000100000003 /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
+		CC0001012C60000100000004 /* AirportServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportServiceProtocol.swift; sourceTree = "<group>"; };
+		CC0001012C60000100000005 /* AirportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportService.swift; sourceTree = "<group>"; };
+		CC0001012C60000100000006 /* AirportSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportSearchViewModel.swift; sourceTree = "<group>"; };
+		CC0001012C60000100000007 /* AirportSearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportSearchField.swift; sourceTree = "<group>"; };
+		CC0001012C60000100000008 /* airports.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = airports.json; sourceTree = "<group>"; };
+		DD0001010000000000000001 /* PilotLoggerWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilotLoggerWidgetBundle.swift; sourceTree = "<group>"; };
+		DD0001010000000000000002 /* PilotLoggerWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilotLoggerWidget.swift; sourceTree = "<group>"; };
+		DD0001010000000000000003 /* PilotLoggerWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PilotLoggerWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +142,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DD0001010000000000000009 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -85,6 +160,7 @@
 				E516A2C92C4E30F900867A65 /* PilotLogger */,
 				E516A2DA2C4E30FC00867A65 /* PilotLoggerTests */,
 				E516A2E42C4E30FC00867A65 /* PilotLoggerUITests */,
+				DD0001010000000000000007 /* PilotLoggerWidget */,
 				E516A2C82C4E30F900867A65 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,6 +171,7 @@
 				E516A2C72C4E30F900867A65 /* PilotLogger.app */,
 				E516A2D72C4E30FC00867A65 /* PilotLoggerTests.xctest */,
 				E516A2E12C4E30FC00867A65 /* PilotLoggerUITests.xctest */,
+				DD0001010000000000000003 /* PilotLoggerWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,9 +181,13 @@
 			children = (
 				E516A2CA2C4E30F900867A65 /* PilotLoggerApp.swift */,
 				E516A2CC2C4E30F900867A65 /* ContentView.swift */,
+				AA0001012C60000100000013 /* Models */,
+				AA0001012C60000100000014 /* ViewModels */,
+				AA0001012C60000100000015 /* Views */,
+				AA0001012C60000100000016 /* Services */,
+				CC0001012C60000100000011 /* Resources */,
 				E516A2CE2C4E30FC00867A65 /* Assets.xcassets */,
 				E516A2D02C4E30FC00867A65 /* Preview Content */,
-				E5E7E8432C58623A0041C32A /* FlightLog.swift */,
 				E5E7E8452C58669E0041C32A /* Launch Screen.storyboard */,
 			);
 			path = PilotLogger;
@@ -124,6 +205,10 @@
 			isa = PBXGroup;
 			children = (
 				E516A2DB2C4E30FC00867A65 /* PilotLoggerTests.swift */,
+				BB0001012C60000100000002 /* FlightLogModelTests.swift */,
+				BB0001012C60000100000003 /* FlightLogFormViewModelTests.swift */,
+				BB0001012C60000100000004 /* FlightLogListViewModelTests.swift */,
+				BB0001012C60000100000009 /* Mocks */,
 			);
 			path = PilotLoggerTests;
 			sourceTree = "<group>";
@@ -137,6 +222,83 @@
 			path = PilotLoggerUITests;
 			sourceTree = "<group>";
 		};
+		AA0001012C60000100000013 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA0001012C60000100000001 /* FlightLog.swift */,
+				CC0001012C60000100000003 /* Airport.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AA0001012C60000100000014 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AA0001012C60000100000004 /* FlightLogListViewModel.swift */,
+				AA0001012C60000100000005 /* FlightLogFormViewModel.swift */,
+				CC0001012C60000100000006 /* AirportSearchViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AA0001012C60000100000015 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA0001012C60000100000006 /* FlightLogFormView.swift */,
+				AA0001012C60000100000007 /* FlightLogDetailView.swift */,
+				AA0001012C60000100000008 /* StatisticsView.swift */,
+				AA0001012C60000100000009 /* FlightLogListView.swift */,
+				CC0001012C60000100000007 /* AirportSearchField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AA0001012C60000100000016 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AA0001012C60000100000017 /* Protocols */,
+				AA0001012C60000100000003 /* FlightLogService.swift */,
+				CC0001012C60000100000002 /* NetworkService.swift */,
+				CC0001012C60000100000005 /* AirportService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AA0001012C60000100000017 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AA0001012C60000100000002 /* FlightLogServiceProtocol.swift */,
+				CC0001012C60000100000001 /* NetworkServiceProtocol.swift */,
+				CC0001012C60000100000004 /* AirportServiceProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BB0001012C60000100000009 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				BB0001012C60000100000001 /* MockFlightLogService.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		CC0001012C60000100000011 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CC0001012C60000100000008 /* airports.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DD0001010000000000000007 /* PilotLoggerWidget */ = {
+			isa = PBXGroup;
+			children = (
+				DD0001010000000000000001 /* PilotLoggerWidgetBundle.swift */,
+				DD0001010000000000000002 /* PilotLoggerWidget.swift */,
+			);
+			path = PilotLoggerWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,10 +309,12 @@
 				E516A2C32C4E30F900867A65 /* Sources */,
 				E516A2C42C4E30F900867A65 /* Frameworks */,
 				E516A2C52C4E30F900867A65 /* Resources */,
+				DD0001010000000000000011 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DD0001010000000000000010 /* PBXTargetDependency */,
 			);
 			name = PilotLogger;
 			productName = PilotLogger;
@@ -193,6 +357,23 @@
 			productReference = E516A2E12C4E30FC00867A65 /* PilotLoggerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		DD000101000000000000000B /* PilotLoggerWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD000101000000000000000E /* Build configuration list for PBXNativeTarget "PilotLoggerWidgetExtension" */;
+			buildPhases = (
+				DD0001010000000000000008 /* Sources */,
+				DD0001010000000000000009 /* Frameworks */,
+				DD000101000000000000000A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PilotLoggerWidgetExtension;
+			productName = PilotLoggerWidgetExtension;
+			productReference = DD0001010000000000000003 /* PilotLoggerWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -215,6 +396,9 @@
 						TestTargetID = E516A2C62C4E30F900867A65;
 					};
 				};
+				DD000101000000000000000B = {
+					CreatedOnToolsVersion = 15.4;
+				};
 			};
 			buildConfigurationList = E516A2C22C4E30F900867A65 /* Build configuration list for PBXProject "PilotLogger" */;
 			compatibilityVersion = "Xcode 14.0";
@@ -232,6 +416,7 @@
 				E516A2C62C4E30F900867A65 /* PilotLogger */,
 				E516A2D62C4E30FC00867A65 /* PilotLoggerTests */,
 				E516A2E02C4E30FC00867A65 /* PilotLoggerUITests */,
+				DD000101000000000000000B /* PilotLoggerWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -242,6 +427,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5E7E8462C58669E0041C32A /* Launch Screen.storyboard in Resources */,
+				CC0001012C60000100000010 /* airports.json in Resources */,
 				E516A2D22C4E30FC00867A65 /* Preview Assets.xcassets in Resources */,
 				E516A2CF2C4E30FC00867A65 /* Assets.xcassets in Resources */,
 			);
@@ -261,6 +447,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DD000101000000000000000A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -270,7 +463,22 @@
 			files = (
 				E516A2CD2C4E30F900867A65 /* ContentView.swift in Sources */,
 				E516A2CB2C4E30F900867A65 /* PilotLoggerApp.swift in Sources */,
-				E5E7E8442C58623A0041C32A /* FlightLog.swift in Sources */,
+				AA0001012C6000010000000A /* FlightLog.swift in Sources */,
+				AA0001012C6000010000000B /* FlightLogServiceProtocol.swift in Sources */,
+				AA0001012C6000010000000C /* FlightLogService.swift in Sources */,
+				AA0001012C6000010000000D /* FlightLogListViewModel.swift in Sources */,
+				AA0001012C6000010000000E /* FlightLogFormViewModel.swift in Sources */,
+				AA0001012C6000010000000F /* FlightLogFormView.swift in Sources */,
+				AA0001012C60000100000010 /* FlightLogDetailView.swift in Sources */,
+				AA0001012C60000100000011 /* StatisticsView.swift in Sources */,
+				AA0001012C60000100000012 /* FlightLogListView.swift in Sources */,
+				CC0001012C60000100000009 /* NetworkServiceProtocol.swift in Sources */,
+				CC0001012C6000010000000A /* NetworkService.swift in Sources */,
+				CC0001012C6000010000000B /* Airport.swift in Sources */,
+				CC0001012C6000010000000C /* AirportServiceProtocol.swift in Sources */,
+				CC0001012C6000010000000D /* AirportService.swift in Sources */,
+				CC0001012C6000010000000E /* AirportSearchViewModel.swift in Sources */,
+				CC0001012C6000010000000F /* AirportSearchField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +487,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E516A2DC2C4E30FC00867A65 /* PilotLoggerTests.swift in Sources */,
+				BB0001012C60000100000005 /* MockFlightLogService.swift in Sources */,
+				BB0001012C60000100000006 /* FlightLogModelTests.swift in Sources */,
+				BB0001012C60000100000007 /* FlightLogFormViewModelTests.swift in Sources */,
+				BB0001012C60000100000008 /* FlightLogListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +500,16 @@
 			files = (
 				E516A2E62C4E30FC00867A65 /* PilotLoggerUITests.swift in Sources */,
 				E516A2E82C4E30FC00867A65 /* PilotLoggerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD0001010000000000000008 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD0001010000000000000004 /* PilotLoggerWidgetBundle.swift in Sources */,
+				DD0001010000000000000005 /* PilotLoggerWidget.swift in Sources */,
+				DD0001010000000000000006 /* FlightLog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +525,11 @@
 			isa = PBXTargetDependency;
 			target = E516A2C62C4E30F900867A65 /* PilotLogger */;
 			targetProxy = E516A2E22C4E30FC00867A65 /* PBXContainerItemProxy */;
+		};
+		DD0001010000000000000010 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD000101000000000000000B /* PilotLoggerWidgetExtension */;
+			targetProxy = DD000101000000000000000F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -556,6 +783,58 @@
 			};
 			name = Release;
 		};
+		DD000101000000000000000C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 449N9QWY8D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PilotLoggerWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Pilot Logger Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = moka.PilotLogger.PilotLoggerWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD000101000000000000000D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 449N9QWY8D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PilotLoggerWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Pilot Logger Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = moka.PilotLogger.PilotLoggerWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -591,6 +870,15 @@
 			buildConfigurations = (
 				E516A2F22C4E30FC00867A65 /* Debug */,
 				E516A2F32C4E30FC00867A65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD000101000000000000000E /* Build configuration list for PBXNativeTarget "PilotLoggerWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD000101000000000000000C /* Debug */,
+				DD000101000000000000000D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

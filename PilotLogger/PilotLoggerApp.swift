@@ -1,11 +1,5 @@
-//
-//  PilotLoggerApp.swift
-//  PilotLogger
-//
-//  Created by Sachh Moka on 22/7/2024.
-//
-
 import SwiftUI
+import SwiftData
 
 @main
 struct PilotLoggerApp: App {
@@ -13,5 +7,6 @@ struct PilotLoggerApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: FlightLog.self)
     }
 }

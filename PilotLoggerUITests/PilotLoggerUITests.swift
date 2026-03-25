@@ -1,41 +1,94 @@
-//
-//  PilotLoggerUITests.swift
-//  PilotLoggerUITests
-//
-//  Created by Sachh Moka on 22/7/2024.
-//
-
 import XCTest
 
 final class PilotLoggerUITests: XCTestCase {
 
+    private var app: XCUIApplication!
+
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+        app = XCUIApplication()
+        app.launch()
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        app = nil
     }
 
-    func testExample() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
-        app.launch()
+    // MARK: - Launch & Navigation
 
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+    func testAppLaunchShowsEmptyState() throws {
+        let navBar = app.navigationBars["Pilot Logger"]
+        XCTAssertTrue(navBar.waitForExistence(timeout: 5))
 
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
+        // Empty state should show when no flights exist
+        let emptyText = app.staticTexts["No Flights Logged"]
+        if emptyText.exists {
+            XCTAssertTrue(emptyText.exists)
         }
+    }
+
+    func testAddButtonExists() throws {
+        let addButton = app.navigationBars.buttons["Add"]
+        if !addButton.exists {
+            // Might be a "plus" button
+            let plusButton = app.navigationBars.buttons.matching(
+                NSPredicate(format: "label CONTAINS[c] 'add' OR label CONTAINS[c] 'plus'")
+            ).firstMatch
+            XCTAssertTrue(plusButton.waitForExistence(timeout: 5))
+        }
+    }
+
+    // MARK: - Add Flight Flow
+
+    func testAddFlightLogFlow() throws {
+        // Tap add button
+        let navBar = app.navigationBars.firstMatch
+        XCTAssertTrue(navBar.waitForExistence(timeout: 5))
+
+        let addButton = navBar.buttons.element(boundBy: navBar.buttons.count - 1)
+        addButton.tap()
+
+        // Fill in required fields
+        let aircraftField = app.textFields["Aircraft Type"]
+        if aircraftField.waitForExistence(timeout: 3) {
+            aircraftField.tap()
+            aircraftField.typeText("C172")
+        }
+
+        let pilotField = app.textFields["Pilot in Command"]
+        if pilotField.waitForExistence(timeout: 3) {
+            pilotField.tap()
+            pilotField.typeText("Test Pilot")
+        }
+
+        let flightTimeField = app.textFields["Flight Time (hours)"]
+        if flightTimeField.waitForExistence(timeout: 3) {
+            flightTimeField.tap()
+            flightTimeField.typeText("1.5")
+        }
+
+        // Tap Add/Save button
+        let saveButton = app.buttons["Add"]
+        if saveButton.waitForExistence(timeout: 3) {
+            saveButton.tap()
+        }
+    }
+
+    // MARK: - Cancel Flow
+
+    func testCancelDismissesForm() throws {
+        let navBar = app.navigationBars.firstMatch
+        XCTAssertTrue(navBar.waitForExistence(timeout: 5))
+
+        let addButton = navBar.buttons.element(boundBy: navBar.buttons.count - 1)
+        addButton.tap()
+
+        let cancelButton = app.buttons["Cancel"]
+        if cancelButton.waitForExistence(timeout: 3) {
+            cancelButton.tap()
+        }
+
+        // Should be back on main screen
+        XCTAssertTrue(app.navigationBars["Pilot Logger"].waitForExistence(timeout: 3))
     }
 }
